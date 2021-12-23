@@ -1,0 +1,36 @@
+@import 'src/assets/styles/variables';
+
+mat-toolbar {
+  background-color: $main-dark;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+  color: $main-light
+}
+
+.light {
+  font-weight: lighter;
+}
+
+.title {
+  cursor: pointer;
+  animation: transform ease-in 0.5s;
+
+  & > h1 {
+    text-shadow: 0 0 0.3rem $main-light;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.links {
+  cursor: pointer;
+
+  & > a {
+    text-decoration: none;
+    color: $main-light;
+    padding-left: 2rem;
+  }
+}

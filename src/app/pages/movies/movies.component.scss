@@ -1,0 +1,15 @@
+@import 'src/assets/styles/variables';
+
+.movies {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+}
+
+h1 {
+  color: $main-light;
+  font-weight: lighter;
+}

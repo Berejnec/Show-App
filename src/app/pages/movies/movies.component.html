@@ -1,3 +1,6 @@
-<div style="display: flex; flex-direction: column">
-<a [routerLink]="['/movie', movie.id]" *ngFor="let movie of movies">{{movie.title}}</a>
+<h1>MOVIES</h1>
+
+<div class="movies">
+  <app-movie [routerLink]="['/movie-page', movie.id]" *ngFor="let movie of movies" [movie]="movie"></app-movie>
 </div>
+
