@@ -11,6 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MovieComponent } from './pages/movies/movie/movie.component';
+import { TvShowsComponent } from './pages/tv-shows/tv-shows.component';
+import { TvShowComponent } from './pages/tv-shows/tv-show/tv-show.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { MovieComponent } from './pages/movies/movie/movie.component';
     MoviesComponent,
     MoviePage,
     NavbarComponent,
-    MovieComponent
+    MovieComponent,
+    TvShowsComponent,
+    TvShowComponent,
   ],
   imports: [
     BrowserModule,

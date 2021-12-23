@@ -9,6 +9,7 @@ html, body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background: repeating-linear-gradient(150deg, $main-dark, $main-dark, $secondary-dark) fixed;
+  //background: repeating-linear-gradient(150deg, $main-dark, $main-dark, $secondary-dark) fixed;
+  background: $main-dark;
   box-sizing: border-box;
 }
