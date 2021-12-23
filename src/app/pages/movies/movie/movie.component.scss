@@ -1,0 +1,19 @@
+@import 'src/assets/styles/variables';
+
+.movie {
+  text-align: center;
+  color: $main-light;
+  cursor: pointer;
+}
+
+img {
+  border-radius: 10px;
+
+  &:hover {
+    border: $primary 2px solid;
+  }
+}
+
+p {
+  text-wrap: normal;
+}

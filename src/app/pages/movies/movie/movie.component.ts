@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
-import {MovieService} from "../../../services/movie.service";
+import {Component, Input, OnInit} from '@angular/core';
 import {Movie} from "../../../models/movie.model";
 
 @Component({
@@ -9,14 +7,17 @@ import {Movie} from "../../../models/movie.model";
   styleUrls: ['./movie.component.scss']
 })
 export class MovieComponent implements OnInit {
-  id!: number;
+  @Input()
   movie!: Movie;
 
-  constructor(private _router: ActivatedRoute, private movieService: MovieService) { }
+  imageBaseUrl = 'https://image.tmdb.org/t/p/w154/';
+  posterPath = '';
+
+  constructor() {
+  }
 
   ngOnInit(): void {
-    this.id = this._router.snapshot.params['id'];
-    this.movieService.getMovieById(this.id).subscribe(data => this.movie = data);
+    this.posterPath = `${this.imageBaseUrl}${this.movie.poster_path}`;
   }
 
 }
