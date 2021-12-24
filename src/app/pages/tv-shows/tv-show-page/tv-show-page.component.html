@@ -1,0 +1,13 @@
+<div class="tv-show">
+  <img class="backdrop" [src]="backdropPath" [alt]="tvShow.name">
+  <img class="poster" [src]="posterPath" [alt]="tvShow.name">
+  <div class="data">
+    <div class="title-average">
+      <h1 class="title">{{tvShow.name}}</h1>
+      <p>Vote Average: {{tvShow.vote_average}}</p>
+      <p>First Air Date : {{tvShow.first_air_date | date }}</p>
+    </div>
+    <h1>Overview: </h1>
+    <p class="overview">{{tvShow.overview}}</p>
+  </div>
+</div>

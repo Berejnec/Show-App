@@ -1,4 +1,6 @@
-<h1>TV Shows</h1>
+<p class="page-title">TV Shows</p>
 
-<app-tv-show *ngFor="let tvShow of tvShows" [tvShow]="tvShow"></app-tv-show>
+<div class="tv-shows">
+  <app-tv-show [routerLink]="['/tv-show-page', tvShow.id]" *ngFor="let tvShow of tvShows" [tvShow]="tvShow"></app-tv-show>
+</div>
 

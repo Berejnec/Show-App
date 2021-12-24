@@ -1,3 +1,11 @@
-h1 {
-  color: white;
+@import 'src/assets/styles/variables';
+
+
+.tv-shows {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
 }

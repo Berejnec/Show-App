@@ -19,5 +19,9 @@ export class TvShowService {
       "https://api.themoviedb.org/3/tv/popular?api_key=" + this.apiKey + "&language=en-US&page=1"
     ).pipe(map(value => value['results']));
   }
+
+  getShowById(id: number) {
+    return this.http.get<any>("https://api.themoviedb.org/3/tv/" + id + "?api_key=" + this.apiKey + "&language=en-US");
+  }
 }
 

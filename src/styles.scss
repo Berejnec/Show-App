@@ -1,5 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import 'assets/styles/variables';
 
 html, body {
@@ -9,7 +7,43 @@ html, body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  //background: repeating-linear-gradient(150deg, $main-dark, $main-dark, $secondary-dark) fixed;
-  background: $main-dark;
+  background: repeating-linear-gradient(150deg, $main-dark, $main-dark, $secondary-dark) fixed;
   box-sizing: border-box;
+}
+
+.title {
+  background: linear-gradient(
+      to right,
+      hsl(308, 47.8%, 73.7%),
+      hsl(350, 46%, 47%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.overview {
+  font-size: 20px;
+}
+.links {
+  background: linear-gradient(
+      to right,
+      hsl(299, 86%, 39%),
+      hsl(259, 67%, 60%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 26px;
+}
+
+.page-title {
+  color: #d848ee;
+  font-size: 45px;
+  padding: 15px;
+  font-family: Georgia, serif;
+}
+
+.presentation-name {
+  font-size: large;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
 }

@@ -13,6 +13,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MovieComponent } from './pages/movies/movie/movie.component';
 import { TvShowsComponent } from './pages/tv-shows/tv-shows.component';
 import { TvShowComponent } from './pages/tv-shows/tv-show/tv-show.component';
+import { TvShowPageComponent } from './pages/tv-shows/tv-show-page/tv-show-page.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { TvShowComponent } from './pages/tv-shows/tv-show/tv-show.component';
     MovieComponent,
     TvShowsComponent,
     TvShowComponent,
+    TvShowPageComponent,
   ],
   imports: [
     BrowserModule,
