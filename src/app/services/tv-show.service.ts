@@ -14,6 +14,7 @@ export class TvShowService {
   constructor(private http: HttpClient) {
   }
 
+  // TODO: the baseURL is hardcoded even tho there's a variable declared for that
   getPopularTvShows() {
     return this.http.get<any>(
       "https://api.themoviedb.org/3/tv/popular?api_key=" + this.apiKey + "&language=en-US&page=1"

@@ -1,3 +1,4 @@
+// TODO: Rename the class -> TvShow
 export interface tvShow {
   id?: number,
   name?: string,

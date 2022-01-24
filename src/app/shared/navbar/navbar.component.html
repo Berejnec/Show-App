@@ -3,7 +3,8 @@
     <h1>SHOW <span class="light">APP</span></h1>
   </div>
   <div class="links">
-    <a id="movies-link" [routerLink]="['/movies']">Movies</a>
-    <a id="tv-shows-link" [routerLink]="['/tv-shows']">TV Shows</a>
+<!--    TODO: no ids required when applying same styles to multiple elements-->
+    <a id="movies-link" class="link" [routerLink]="['/movies']">Movies</a>
+    <a id="tv-shows-link" class="link" [routerLink]="['/tv-shows']">TV Shows</a>
   </div>
 </mat-toolbar>

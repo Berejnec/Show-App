@@ -11,6 +11,7 @@ body {
   box-sizing: border-box;
 }
 
+// TODO: No reason for all these styles to be global, they only apply to specific components
 .title {
   background: linear-gradient(
       to right,

@@ -45,7 +45,15 @@ h1 {
   font-size: 30px;
 }
 
-#movies-link:hover, #tv-shows-link:hover {
-  font-size: 125%;
-  font-family: Georgia, serif;
+// TODO: ids
+//#movies-link:hover, #tv-shows-link:hover {
+//  font-size: 125%;
+//  font-family: Georgia, serif;
+//}
+
+.link {
+  &:hover {
+    font-size: 125%;
+    font-family: Georgia, serif;
+  }
 }
