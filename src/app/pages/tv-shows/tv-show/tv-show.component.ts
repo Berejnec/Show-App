@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import { tvShow } from "../../../models/tv-show.model";
+import { TvShow } from "../../../models/tv-show.model";
 
 @Component({
   selector: 'app-tv-show',
@@ -7,7 +7,7 @@ import { tvShow } from "../../../models/tv-show.model";
   styleUrls: ['./tv-show.component.scss']
 })
 export class TvShowComponent implements OnInit {
-  @Input() tvShow!: tvShow;
+  @Input() tvShow!: TvShow;
   imageBaseUrl = 'https://image.tmdb.org/t/p/w154/';
   posterPath = '';
   constructor() { }

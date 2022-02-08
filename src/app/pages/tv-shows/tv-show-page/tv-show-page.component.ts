@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import {tvShow} from "../../../models/tv-show.model";
+import {TvShow} from "../../../models/tv-show.model";
 import {TvShowService} from "../../../services/tv-show.service";
 
 @Component({
@@ -11,7 +11,7 @@ import {TvShowService} from "../../../services/tv-show.service";
 export class TvShowPageComponent implements OnInit {
 
   id!: number;
-  tvShow!: tvShow;
+  tvShow!: TvShow;
 
   imageBaseUrl154 = 'https://image.tmdb.org/t/p/w154/';
   posterPath = '';

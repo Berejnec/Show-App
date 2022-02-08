@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {TvShowService} from "../../services/tv-show.service";
-import {tvShow} from "../../models/tv-show.model";
+import {TvShow} from "../../models/tv-show.model";
 
 @Component({
   selector: 'app-tv-shows',
@@ -8,7 +8,7 @@ import {tvShow} from "../../models/tv-show.model";
   styleUrls: ['./tv-shows.component.scss']
 })
 export class TvShowsComponent implements OnInit {
-  tvShows!: Array<tvShow>;
+  tvShows!: Array<TvShow>;
 
   constructor(private tvShowService: TvShowService) { }
 

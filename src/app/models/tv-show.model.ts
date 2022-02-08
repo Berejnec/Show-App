@@ -1,5 +1,4 @@
-// TODO: Rename the class -> TvShow
-export interface tvShow {
+export interface TvShow {
   id?: number,
   name?: string,
   poster_path?: string,

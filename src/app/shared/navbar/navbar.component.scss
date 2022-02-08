@@ -21,7 +21,7 @@ mat-toolbar {
   }
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
   background: linear-gradient(
       to right,
@@ -45,15 +45,12 @@ h1 {
   font-size: 30px;
 }
 
-// TODO: ids
-//#movies-link:hover, #tv-shows-link:hover {
-//  font-size: 125%;
-//  font-family: Georgia, serif;
-//}
-
 .link {
   &:hover {
     font-size: 125%;
     font-family: Georgia, serif;
   }
+}
+mat-toolbar {
+  border-bottom: 2px solid #b40eb8;
 }
