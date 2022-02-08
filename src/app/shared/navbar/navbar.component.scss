@@ -12,7 +12,7 @@ mat-toolbar {
   font-weight: lighter;
 }
 
-.title {
+.title-app {
   cursor: pointer;
   animation: transform ease-in 0.5s;
 
@@ -21,8 +21,15 @@ mat-toolbar {
   }
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
+  background: linear-gradient(
+      to right,
+      hsl(280, 81%, 25%),
+      hsl(273, 98%, 60%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .links {
@@ -33,4 +40,17 @@ mat-toolbar {
     color: $main-light;
     padding-left: 2rem;
   }
+}
+h1 {
+  font-size: 30px;
+}
+
+.link {
+  &:hover {
+    font-size: 125%;
+    font-family: Georgia, serif;
+  }
+}
+mat-toolbar {
+  border-bottom: 2px solid #b40eb8;
 }
